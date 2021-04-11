@@ -167,8 +167,7 @@ const workerConfig = {
   by: splitTests
 };
 
-// don't initialize workers in constructor
-const customWorkers = new Workers(null,  workerConfig);
+const customWorkers = new Workers(2,  workerConfig);
 
 customWorkers.run();
 
